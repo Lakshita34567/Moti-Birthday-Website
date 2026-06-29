@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Moti ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+<div id="floating-hearts"></div>
+
+<!-- ================= LOADING SCREEN ================= -->
+
+<section id="loading-screen" class="screen active">
+
+<div class="loading-content">
+
+<div class="loading-heart">
+❤️
+</div>
+
+<h1>Made with Love</h1>
+
+<p>Preparing something magical...</p>
+
+<div class="loader">
+
+<div class="loader-fill"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ENVELOPE PAGE ================= -->
+
+<section id="envelope-screen" class="screen">
+
+<div class="envelope-wrapper">
+
+<div id="envelope" class="envelope">
+
+<div class="envelope-front">
+
+💌
+
+</div>
+
+</div>
+
+<h1 class="letter-title">
+
+A Letter
+
+</h1>
+
+<h2 class="letter-subtitle">
+
+For My
+
+</h2>
+
+<h1 id="motiName">
+
+Moti ❤️
+
+</h1>
+
+<p class="click-text">
+
+Click the envelope to open
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= PASSWORD PAGE ================= -->
+
+<section id="password-screen" class="screen">
+
+<div class="card">
+
+<h1>
+
+Hi Moti ❤️
+
+</h1>
+
+<p>
+
+Only one person can unlock this.
+
+</p>
+
+<input
+
+id="password"
+
+type="password"
+
+placeholder="Enter Secret Passcode"
+
+>
+
+<button id="unlock">
+
+Unlock ❤️
+
+</button>
+
+<p id="wrong-message"></p>
+
+</div>
+
+</section>
+<section id="wrong-password-screen" class="screen">
+
+    <div class="wrong-password-box">
+
+        <img src="images/bubu-bite.gif" id="wrongBubu">
+
+        <h2>Oopsie... Wrong Password! 🤭❤️</h2>
+
+        <p>
+
+            Bubu is biting Dudu because you guessed wrong!
+
+            <br><br>
+
+            Try again, Moti ❤️
+
+        </p>
+
+    </div>
+
+</section>
+<section id="correct-password-screen" class="screen">
+
+    <div class="wrong-password-box">
+
+        <img src="images/bubu-celebrate.gif" id="correctBubu">
+
+        <h2>Yayyyyy!! 🎉❤️</h2>
+
+        <p>
+
+            You got it, Moti!
+
+            <br><br>
+
+            Let's open your birthday surprise ❤️
+
+        </p>
+
+    </div>
+
+</section>  
+<!-- ================= QUESTION SCREEN ================= -->
+
+<section id="question-screen" class="screen">
+
+    <div class="card">
+
+        <h1>I have something special ❤️</h1>
+
+        <p>Do you want to see it?</p>
+
+        <div class="button-group">
+
+            <button id="yesBtn">
+                YES ❤️
+            </button>
+
+            <button id="noBtn">
+                NO 🙈
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BIRTHDAY SCREEN ================= -->
+
+<section id="birthday-screen" class="screen">
+
+    <div class="birthday-box">
+
+        <h1>🎂 Happy Birthday</h1>
+
+        <h2>My Moti ❤️</h2>
+
+        <p>
+            Today is all about you.
+        </p>
+
+        <button id="giftBtn">
+
+            Open Your Gift 🎁
+
+        </button>
+
+    </div>
+
+</section>
+<!-- ================= LOVE LETTER ================= -->
+
+<section id="letter-screen" class="screen">
+
+    <div class="letter-card">
+
+        <h1>💌</h1>
+
+        <h2>To My Moti ❤️</h2>
+
+        <div id="typingText"></div>
+
+        <button id="continueBtn">
+
+            Continue ❤️
+
+        </button>
+
+    </div>
+
+</section>
+<!-- ================= MEMORIES SCREEN ================= -->
+
+<section id="memories-screen" class="screen">
+
+    <div class="memories-card">
+
+        <h1>❤️ Our Memories ❤️</h1>
+
+        <p>
+            Every picture tells a story, and every story has you.
+        </p>
+
+        <div class="heart-gallery">
+
+            <img src="images/photo1.jpeg" class="memory-photo">
+            <img src="images/photo2.jpeg" class="memory-photo">
+            <img src="images/photo3.jpeg" class="memory-photo">
+            <img src="images/photo4.jpeg" class="memory-photo">
+            <img src="images/photo5.jpeg" class="memory-photo">
+            <img src="images/photo6.jpeg" class="memory-photo">
+
+        </div>
+
+        <button id="finalBtn">
+
+            One Last Surprise ❤️
+
+        </button>
+
+    </div>
+
+</section>
+<!-- ===========================
+FINAL GIFT
+=========================== -->
+
+<section id="gift-screen" class="screen">
+
+    <div class="gift-container">
+
+        <h1>One Last Gift ❤️</h1>
+
+        <p class="gift-message">
+
+            Before this day ends...
+
+            <br><br>
+
+            I wanted to give you something that comes straight from my heart.
+
+        </p>
+
+        <div class="gift-box" id="giftBox">
+            <div id="magicOverlay">
+
+    <div id="magicGlow"></div>
+
+    <div id="magicHeart">❤️</div>
+
+</div>
+
+            <div class="gift-lid">
+
+                <div class="ribbon vertical"></div>
+                <div class="ribbon horizontal"></div>
+
+                <div class="bow">
+
+                    🎀
+
+                </div>
+
+            </div>
+
+            <div class="gift-base">
+
+                <div class="ribbon vertical"></div>
+                <div class="ribbon horizontal"></div>
+
+            </div>
+
+        </div>
+
+        <p class="gift-click">
+
+            Click your gift 🎁
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ===========================
+VIDEO SCREEN
+=========================== -->
+
+<section id="video-screen" class="screen">
+
+    <div class="video-container">
+
+        <h1>Happy Birthday Moti ❤️</h1>
+
+        <div id="videoReveal">
+            <p id="videoIntro"></p>
+        </div>
+
+        <video
+            id="birthdayVideo"
+            controls
+            preload="metadata"
+            poster="images/video-placeholder.jpg"
+            style="display:none;">
+
+            <source
+                src="videos/birthday.mp4"
+                type="video/mp4">
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
+</section>
+<!-- ===========================
+FINAL COLLAGE
+=========================== -->
+
+<section id="collage-screen" class="screen">
+
+    <div class="collage-container">
+
+        <h1>Happy Birthday ❤️</h1>
+
+        <img src="images/collage.png" id="finalCollage">
+
+        <div class="final-message" id="finalMessage">
+
+            <p class="line1">
+                Every beat of my heart has a little piece of you.
+            </p>
+
+            <p class="line2">
+                Happy Birthday, My Moti ❤️
+            </p>
+
+            <p class="line3">
+                Forever Yours,
+                <br>
+                Dhus ❤️
+            </p>
+
+        </div>
+
+        <div id="finalBubu">
+
+            <img src="images/bubu-hug.gif" id="finalBubuGif">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Scripts -->
+ <div id="cursorFollower">
+
+    ❤️
+
+</div>
+<audio id="bgMusic" loop>
+
+    <source src="music/our-song.mp3" type="audio/mpeg">
+
+</audio>
+
+<script src="config.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
