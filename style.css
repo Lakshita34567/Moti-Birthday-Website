@@ -1304,13 +1304,21 @@ MOBILE RESPONSIVE
 
     .screen{
 
-        position:relative;
+    position:relative;
 
-        min-height:100vh;
+    min-height:100dvh;
 
-        padding:25px;
+    padding:25px;
 
-    }
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:auto;
+
+}
 
     /* General Cards */
 
